@@ -18,11 +18,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://insparq.com
+    status: 302
+    note: declared website redirects to hugedomains.com — a domain sales/parking service, so the domain
+      has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://insparq.com', status: 302, note: 'declared website redirects to hugedomains.com — a domain sales/parking service, so the domain has lapsed rather than moved to an acquirer (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/insparq.png
 name: InSparq
 description: InSparq is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
@@ -39,16 +41,16 @@ x-enrichment:
   last-run: '2026-07-19'
   method: probed
   result: no-live-surface
-  note: insparq.com is a parked domain for sale (301/redirect to hugedomains.com,
-    Kestrel 404 origin). InSparq was an early social-commerce startup in the 500
-    Startups portfolio and appears defunct. No live docs host, OpenAPI, package
-    registry, or /.well-known surface exists to search, generate, or derive from
-    without fabrication, so no artifacts were produced.
+  note: insparq.com is a parked domain for sale (301/redirect to hugedomains.com, Kestrel 404 origin).
+    InSparq was an early social-commerce startup in the 500 Startups portfolio and appears defunct. No
+    live docs host, OpenAPI, package registry, or /.well-known surface exists to search, generate, or
+    derive from without fabrication, so no artifacts were produced.
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-09-15'
 tags:
 - Company
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
